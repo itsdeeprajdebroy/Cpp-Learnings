@@ -16,7 +16,6 @@ void sortArray(int arr[],int size){
     arrayIndex++;
   }
   int arrayIndex1 = 0,var2 = 0;
-  if(arrayIndex == size){
     while(arrayIndex1 < size){
       switch (var2) {
         case 0: arr[arrayIndex1]=0;
@@ -34,7 +33,6 @@ void sortArray(int arr[],int size){
       }
         arrayIndex1++;
     }
-  }
 }
 
 int main(){
