@@ -2,7 +2,7 @@
 using namespace std;
 //union and intersection of two sorted array
 void printUnion(int arr1[],int arr2[],int size1,int size2){
-  int i = 0, j = 0;
+  int i = 0, j = 0,var1 = 0, var2 = 0;
   cout<<"Union of two sorted array is "<<endl;
   while(i < size1 || j < size2){
     if(i != size1 && j != size2){
@@ -27,11 +27,13 @@ void printUnion(int arr1[],int arr2[],int size1,int size2){
       else{
         if(arr2[j-1] == arr2[j] && j != 0){
           j++;
+          var1 = 1;
         }
         if(arr1[i-1] == arr1[i] && i != 0){
           i++;
+          var2 = 1;
         }
-        else{
+        if(var1 == 0 && var2 == 0){
           cout<<arr1[i]<<" ";
           i++;
           j++;
@@ -100,7 +102,7 @@ int main(){
   for(int arrayIndex = 0; arrayIndex < size2; arrayIndex++){
      cin>>arr2[arrayIndex];
   }
-  // printUnion(arr1,arr2,size1,size2);
+  printUnion(arr1,arr2,size1,size2);
   printIntersection(arr1,arr2,size1,size2);
   return 0;
 }
