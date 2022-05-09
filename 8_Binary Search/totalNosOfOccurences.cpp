@@ -36,7 +36,7 @@ int lastOccu(int arr[], int size, int target){
  }
 return ans;
 }
-
+//driver code
 int main(){
   int arr[100],size,target,occurenceFirst,occurenceLast;
   cout<<"Enter array size "<<endl;
@@ -52,3 +52,4 @@ int main(){
   cout<<"Total Number of Occurence is "<<(occurenceLast - occurenceFirst + 1)<<endl;
   return 0;
 }
+//driver code

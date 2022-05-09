@@ -16,9 +16,9 @@ int pivotElements(int arr[], int n){
   }
  return start;
 }
-
+//driver code
 int main(){
-  int arr[100],size,target;
+  int arr[100],size;
   cout<<"Enter array size "<<endl;
   cin>>size;
   cout<<"Enter Array "<<endl;
@@ -30,3 +30,4 @@ int main(){
   cout<<"Pivot element is "<<arr[ans];
   return 0;
 }
+//driver code

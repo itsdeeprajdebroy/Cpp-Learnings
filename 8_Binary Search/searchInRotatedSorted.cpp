@@ -25,7 +25,7 @@ int roatatedSearch(int nums[], int size, int target){
   }
   return -1;
 }
-
+//driver code
 int main(){
   int arr[100],size,target;
   cout<<"Enter array size "<<endl;
@@ -39,3 +39,4 @@ int main(){
   cout<<roatatedSearch(arr,size,target)<<endl;
   return 0;
 }
+//driver code
