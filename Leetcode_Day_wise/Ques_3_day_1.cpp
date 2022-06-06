@@ -1,3 +1,4 @@
+//nextGreaterElement similar to next permutation
 class Solution {
 public:
     string reverse(string& nums , int start , int end)

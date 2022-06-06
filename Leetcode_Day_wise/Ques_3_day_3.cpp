@@ -1,8 +1,8 @@
+//Segregate 0s and 1s
 #include<iostream>
 using namespace std;
 
-//Segregate 0s and 1s
-Approach 1
+//Approach 1
 class Solution{
 public:
     void segregate0and1(int arr[], int n) {
