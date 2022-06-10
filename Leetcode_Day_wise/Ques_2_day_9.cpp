@@ -50,7 +50,7 @@ bool searchMatrix(vector<vector<int>>& matrix, int target)
 int main()
 {
   vector<vector<int>> matrix = {{1,3,5,7},{10,11,16,20},{23,30,34,60}};
-  int target = 3;
-  bool yedd = searchMatrix(matrix , target);
-  cout<<yedd;
+  int target = 200;
+  bool isTarget = searchMatrix(matrix , target);
+  cout<<isTarget;
 }
