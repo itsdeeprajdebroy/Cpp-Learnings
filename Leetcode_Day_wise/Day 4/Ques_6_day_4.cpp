@@ -1,4 +1,4 @@
-// Reach a Number
+//Reach a Number
 class Solution {
 public:
     int reachNumber(int target) {

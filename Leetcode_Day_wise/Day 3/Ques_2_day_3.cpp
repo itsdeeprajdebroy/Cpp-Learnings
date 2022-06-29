@@ -1,7 +1,5 @@
-//sort 0 , 1 , 2
-#include<iostream>
-using namespace std;
-//Approach 1
+//approach 1
+//sort012
 void sort012(int arr[], int n)
 {
     int count0 = 0, count1 = 0, index = 0;
@@ -43,36 +41,32 @@ void sort012(int arr[], int n)
         index++;
     }
 }
-
-//Approach 2(Dutch National Flag Algo)--> One pass Solution
-void sort012UsingAlgo(int arr[] , int size)
+//Dutch national flag algo
+void sort012(int a[], int arr_size)
 {
-  int low = 0, mid = 0, high = size - 1;
-  while(mid <= high)
-  {
-    switch(arr[mid])
-    {
-      case 0: swap(arr[mid] , arr[low]);
-              mid++;
-              low++;
-              break;
+    int lo = 0;
+    int hi = arr_size - 1;
+    int mid = 0;
 
-      case 1: mid++;
-              break;
+    // Iterate till all the elements
+    // are sorted
+    while (mid <= hi) {
+        switch (a[mid]) {
 
-      case 2: swap(arr[mid] , arr[high]);
-              high--;
-              break;
+        // If the element is 0
+        case 0:
+            swap(a[lo++], a[mid++]);
+            break;
+
+        // If the element is 1 .
+        case 1:
+            mid++;
+            break;
+
+        // If the element is 2
+        case 2:
+            swap(a[mid], a[hi--]);
+            break;
+        }
     }
-  }
-}
-
-int main()
-{
-  int arr[] = {2, 0, 1, 1, 1};
-  sort012UsingAlgo(arr, 5);
-  for(int i = 0; i < 5; i++)
-  {
-    cout<<arr[i] <<" ";
-  }
 }

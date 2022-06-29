@@ -1,9 +1,10 @@
+//Common elements in all rows of a given matrix
 #include <bits/stdc++.h>
 using namespace std;
-//Common elements in all rows of a given matrix
+
 void printCommonElements(int mat[4][5])
 {
-  set<int> mySet;
+    set<int> mySet;
 	map<int , int> myMap;
 	set<int>::iterator itr;
 	map<int , int>::iterator itrm;
@@ -29,7 +30,7 @@ void printCommonElements(int mat[4][5])
 }
 
 int main() {
-  int mat[4][5] = {{1, 2, 7, 4, 8},{3, 7, 8, 5, 1},{8, 7, 7, 3, 1},{8, 1, 2, 7, 9},};
+    int mat[4][5] = {{1, 2, 7, 4, 8},{3, 7, 8, 5, 1},{3, 7, 7, 3, 1},{8, 1, 2, 7, 9},};
 	printCommonElements(mat);
 	return 0;
 }

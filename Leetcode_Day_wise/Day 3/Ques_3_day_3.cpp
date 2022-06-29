@@ -1,4 +1,5 @@
-//sort-array-by-parity
+//Sort Array By Parity
+//dutch national flag algo
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& arr) {
@@ -10,7 +11,7 @@ public:
                 case 0: mid++;
                         low++;
                         break;
-
+                    
                 case 1: swap(arr[mid] , arr[high]);
                         high--;
                         break;

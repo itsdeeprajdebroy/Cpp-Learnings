@@ -25,5 +25,18 @@ int main()
   int newNum = 5;
   int *ptr4 = &newNum;
   (*ptr4)++;
-  cout<<newNum<<" "<<*ptr4;
+  cout<<newNum<<" "<<*ptr4<<endl;
+
+  //coping old pointer to a new pointer
+  newNum = 10;
+  int *ptr5 = &newNum;
+  int *ptr6 = ptr5;
+  cout<<*ptr5<<" "<<*ptr6<<" "<<newNum<<endl;
+
+  //incrementing pointer
+  newNum = 100;
+  int *ptr7 = &newNum;
+  ptr7++;
+  cout<<*ptr7<<endl;//-> ptr7 will point towards some garvage value
+  return 0;
 }
