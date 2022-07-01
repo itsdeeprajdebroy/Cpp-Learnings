@@ -5,7 +5,7 @@ int main()
 {
   // int arr[10] = {0};
   // int *ptr = &arr[0];
-  //Address of first block is-->(use online cpp compilers)
+  //Address of first block is
   /*
   cout<<"Address of first block is--> "<<arr<<endl;
   cout<<"Address of first block is--> "<<&arr[0]<<endl;
