@@ -53,7 +53,7 @@ int main()
   //static allocation
   Hero Deepraj;
 
-  //dynamic allocation -> in dynamic allocation we need to delete manually
+  //dynamic allocation -> in dynamic allocation we need to call destructor manually using delete keyword 
   Hero *raj = new Hero;
   delete raj;
 }

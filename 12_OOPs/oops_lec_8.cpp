@@ -69,3 +69,5 @@ int main()
   cout << "Level of Raj is-> " << raj.getLevel() << endl;
   raj.printName();
 }
+//so we tried to change Deepraj name but Raj name has also changed which is shallow copy
+//default copy constructor uses shallow copy

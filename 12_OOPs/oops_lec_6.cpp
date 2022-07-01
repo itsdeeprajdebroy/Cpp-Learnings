@@ -8,7 +8,7 @@ private://access specifiers
   int health;
   char level;
 public:
-  //default constructor
+  //Parameterized constructor
   Hero(int health , char level)
   {
     this -> health = health;//this stores address of current object

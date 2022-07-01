@@ -8,13 +8,13 @@ private://access specifiers
   int health;
   char level;
 public:
-  //default constructor
+  //parameterised constructor
   Hero(int health , char level)
   {
     this -> health = health;//this stores address of current object
     this -> level = level;
   }
-  //Copy Constructor-> not mandatorlylly required
+  //Copy Constructor-> not mandatorlylly required(as by default copy constructor is present)
   Hero(Hero &temp)
   {
     this -> health = temp.health;//this stores address of current object

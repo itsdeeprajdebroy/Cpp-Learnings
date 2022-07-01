@@ -22,15 +22,6 @@ public:
     this -> level = level;
   }
 
-  // Hero(Hero &temp)
-  // {
-  //   char *ch = new char[100];
-  //   strcpy(ch , temp.name);
-  //   this -> name = ch;
-  //   this -> health = temp.health;
-  //   this -> level = temp.level;
-  // }
-
   int getHealth()
   {
     return health;
@@ -66,7 +57,7 @@ int main()
   char alu[5] = "peep";
   Hero raj(20,'p');
   raj.setName(alu);
-  raj = Deepraj;
+  raj = Deepraj;//copying the properties of Deepraj to raj
   cout << "Health of raj is-> " << raj.getHealth() << endl;
   cout << "Level of Raj is-> " << raj.getLevel() << endl;
   raj.printName();
