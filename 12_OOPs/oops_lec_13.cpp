@@ -1,4 +1,4 @@
-//Inheritance
+//Inheritance more examples(public data member in base class and protected mode inheritance -> protected data member in the inheriting class example)
 #include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
@@ -21,7 +21,7 @@ public:
   }
 };
 //inheriting class
-class Male : public Human
+class Male : protected Human
 {
 public:
   int health;
@@ -29,6 +29,16 @@ public:
   void sleep()
   {
     cout << "Male is sleeping" << endl;
+  }
+
+  int getWeight()
+  {
+    return this -> weight;
+  }
+
+  void setWeight(int weight)
+  {
+    this -> weight = weight;
   }
 };
 
