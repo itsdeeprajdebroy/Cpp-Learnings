@@ -1,4 +1,4 @@
-//delete LL
+//insertion at head
 #include<iostream>
 using namespace std;
 
@@ -15,16 +15,6 @@ public:
     this -> next = NULL;
     this -> prev = NULL;
   }
-
-  // ~Node()
-  // {
-  //   if(this -> next != NULL)
-  //   {
-  //     delete this -> next;
-  //     this -> next = NULL;
-  //   }
-  // }
-
 };
 
 //insertion in reverse order

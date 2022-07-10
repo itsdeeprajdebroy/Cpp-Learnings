@@ -18,11 +18,10 @@ public:
 
   ~Node()
   {
-    if(this -> next == NULL)
+    if(this -> next != NULL)
     {
       delete next;
       this -> next = NULL;
-      cout << "kola";
     }
   }
 };

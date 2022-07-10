@@ -1,4 +1,4 @@
-//circular linked list
+//circular linked list --> using sLL
 #include<iostream>
 using namespace std;
 
@@ -24,7 +24,7 @@ public:
   }
 };
 
-//insertion in reverse order
+//insertion in Circular linked List
 void insertAtNode(Node* &tail , int element , int data)
 {
   Node* curr = tail;
@@ -37,25 +37,25 @@ void insertAtNode(Node* &tail , int element , int data)
   curr -> next = temp;
 }
 
-//delete LL
+//Delete Circular Linked List
 void deleteAt(Node* &tail , int element)
 {
   Node* curr = tail;
   Node* prevs = NULL;
-  //traversal
+  //traversal of Linked List
   while(curr -> data != element)
   {
     prevs = curr;
     curr = curr -> next;
   }
 
-  //deleteAt any position
+  //Delete at any position
   prevs -> next = curr -> next;
   curr -> next = NULL;
   delete curr;
 }
 
-//printing LL
+//Printing Linked List
 void print(Node* &tail)
 {
   Node* temp = tail -> next;
@@ -73,6 +73,7 @@ int main()
   //first node creation
   Node* node = new Node(100);
   Node* tail = node;
+  //Function call
   insertAtNode(tail , 100 , 20);
   insertAtNode(tail , 20 , 15);
   insertAtNode(tail , 15 , 25);
@@ -80,18 +81,6 @@ int main()
   insertAtNode(tail , 15 , 35);
   deleteAt(tail , 15);
   deleteAt(tail , 25);
-  // insertAtTail(tail , 20);
-  // insertAtTail(tail , 50);
-  // insertAtTail(tail , 33);
-  // insertAtTail(tail , 55);
-  // insertAtMiddle(tail , head , 3 , 5);
-  // insertAtMiddle(tail , head , 1 , 12);
-  // insertAtMiddle(tail , head , 6 , 10);
-  // insertAtMiddle(tail , head , 8 , 35);
-  // insertAtMiddle(tail , head , 10 , 45);
-  // deleteAt(tail , head , 1);
-  // deleteAt(tail , head , 6);
-  // insertAtMiddle(tail , head , 1 , 45);
+  //Printing Linked List
   print(tail);
-  // getLength(head);
 }

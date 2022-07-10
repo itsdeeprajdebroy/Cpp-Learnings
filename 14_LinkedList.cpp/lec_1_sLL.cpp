@@ -35,8 +35,10 @@ void print(Node* &head)
 
 int main()
 {
+  //first node creation
   Node* node = new Node(1000);
   Node* head = node;
+  //remaining node creation
   insertAtNode(head , 500);
   insertAtNode(head , 15);
   insertAtNode(head , 50);

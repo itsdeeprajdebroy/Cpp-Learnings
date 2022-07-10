@@ -9,7 +9,6 @@ public:
   //initial node
   Node(int data)
   {
-    cout << "helo";
     this -> data = data;
     this -> next = NULL;
   }

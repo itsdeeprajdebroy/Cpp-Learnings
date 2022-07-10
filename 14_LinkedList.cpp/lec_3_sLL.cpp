@@ -30,7 +30,7 @@ void insertAtNode(Node* &head , int data)
   head = temp;
 }
 
-//insertion at middle
+//insertion at middle or at any position
 void insertAtMiddle(Node* &tail , Node* &head , int position , int data)
 {
   //to insert at first position

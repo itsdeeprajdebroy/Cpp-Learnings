@@ -1,4 +1,4 @@
-//insertion at head
+//insertion at tail
 #include<iostream>
 using namespace std;
 
